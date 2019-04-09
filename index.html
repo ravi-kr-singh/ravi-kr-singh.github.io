@@ -11,6 +11,7 @@
       integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
       crossorigin="anonymous"
     />
+
     <link
       rel="stylesheet"
       href="font/font-awesome-4.7.0/css/font-awesome.min.css"
@@ -39,7 +40,7 @@
         height="80"
         viewBox="0 0 250 250"
         style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 17;"
-        aria-hidden="false"
+        aria-hidden="true"
       >
         <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
         <path
@@ -98,7 +99,7 @@
         <a href="#skills" class="text-monospace navitem d-block">
           SKILLS
         </a>
-        <a href="#project" class="text-monospace navitem d-block">
+        <a href="#projects" class="text-monospace navitem d-block">
           PROJECTS
         </a>
         <a href="#contact" class="text-monospace navitem  mb-4 d-block item4">
@@ -193,8 +194,8 @@
             <div class="web-card">
               Machine<br />
               Learning
-
-              <div class="text-muted" style="font-size:14px;">
+              <br />
+              <div class="text-muted" style="font-size:14px; float:right;">
                 ...yet to learn
               </div>
             </div>
@@ -336,9 +337,9 @@
               <p class="pb-0 pt-3">DS & algo</p>
               <div class="progress">
                 <div
-                  class="progress-bar color-8"
+                  class="progress-bar color-4"
                   role="progressbar"
-                  aria-valuenow="90"
+                  aria-valuenow="80"
                   aria-valuemin="0"
                   aria-valuemax="100"
                   style="width:80%"
@@ -356,7 +357,7 @@
       </div>
       <br />
       <br />
-      <div id="project">
+      <div id="projects">
         <h2>Projects</h2>
         <hr />
         <br />
@@ -417,6 +418,17 @@
                       >ravi-kr-singh.github.io</a
                     >
                     <span class="ml-1">Portfolio website</span>
+                    <a
+                      target="_blank"
+                      class="link1 mr-2"
+                      style="float:right;"
+                      href="https://ravi-kr-singh.github.io"
+                      ><i
+                        class="fa fa-external-link"
+                        aria-hidden="true"
+                        style="color: black;"
+                      ></i>
+                    </a>
                   </h2>
                   <p>
                     The company provides technology-backed AI/ML solutions.<br />I
@@ -435,11 +447,8 @@
                       href="https://ravi-kr-singh.github.io/Courstack/"
                       target="_blank"
                       class="link1 display-6"
-                      >abcdefghjik.github.io<img
-                        class="img-fluid ml-2 mr-2 mb-1"
-                        src="img/logo2.jpg"
-                        alt="Courstack logo"
-                    /></a>
+                      >abcdefghjik.github.io</a
+                    >
                     <span>Portfolio Websiite</span>
 
                     <a
@@ -483,8 +492,151 @@
       <div id="contact">
         <h2>Contact</h2>
         <hr />
-        <br />
+
+        <p>
+          If you would like to get in touch with me, be it for exploring a
+          technology, a business, or to just say hi, feel free to send me an
+          email at
+          <strong
+            ><a href="mailto: imrk016@gmail.com" class="link1"
+              >imrk016@gmail.com</a
+            ></strong
+          >
+          .
+        </p>
+
+        <p class="text-center">
+          <strong style="color: #FA3675;">Thanks for stopping by.</strong>
+        </p>
+
+        <div class="text-center">
+          <a
+            href="https://www.linkedin.com/in/ravi-kumar-singh-615075172/"
+            class="link1"
+            target="_blank"
+          >
+            <span class="change-icon">
+              <i
+                class="fa fa-linkedin-square fa-2x  githublogo mr-5  mb-4"
+                style="color:grey;"
+                aria-hidden="true"
+              ></i>
+              <i
+                class="fa fa-linkedin-square fa-2x  githublogo mr-5 mb-4"
+                style="color:#0077B5;"
+                aria-hidden="true"
+              ></i>
+            </span>
+          </a>
+          <a
+            href="https://github.com/ravi-kr-singh"
+            class="link1"
+            target="_blank"
+          >
+            <span class="change-icon">
+              <i
+                class="fa fa-github fa-2x  githublogo ml-2 mb-4"
+                style="color:grey;"
+                aria-hidden="true"
+              ></i>
+              <i
+                class="fa fa-github fa-2x  githublogo ml-2 mb-4"
+                style="color:#24292e;"
+                aria-hidden="true"
+              ></i>
+            </span>
+          </a>
+        </div>
       </div>
+
+      <div class="message-modal">
+        <!-- MESSAGE MODAL TRIGGER -->
+        <div class=" text-center">
+          <button
+            class="btn btn-info msgmodal"
+            data-toggle="modal"
+            data-target="#messageModal"
+          >
+            Leave a Message
+          </button>
+        </div>
+
+        <!-- MESSAGE MODAL -->
+        <div class="modal" id="messageModal">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class=" float-right mt-1 mr-1">
+                <button class="close " data-dismiss="modal">
+                  &times;
+                </button>
+              </div>
+
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <label for="name">Name</label>
+                    <input
+                      class="form-control"
+                      type="text"
+                      id="name"
+                      placeholder="Name"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Email </label>
+                    <input
+                      class="form-control"
+                      type="email"
+                      id="email"
+                      placeholder="Email"
+                    />
+                    <small class="form-text text-muted"
+                      >Your email will not ever be shared</small
+                    >
+                  </div>
+                  <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea
+                      class="form-control"
+                      id="message"
+                      rows="3"
+                    ></textarea>
+                  </div>
+                </form>
+              </div>
+              <div class="p-2">
+                <button
+                  class="btn btn-info btn-block"
+                  type="submit"
+                  data-dismiss="modal"
+                >
+                  Send<i class="fa fa-paper-plane ml-2" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <br />
+      <div class="text-center">
+        <h6 class="d-inline">Page Visited :</h6>
+        <span>
+          <a href="https://www.counter12.com"
+            ><img
+              src="https://www.counter12.com/img-Za238B64C10wZzZ5-27.gif"
+              style="border:0;"
+              alt="counter"
+          /></a>
+        </span>
+        <script
+          type="text/javascript"
+          src="https://www.counter12.com/ad.js?id=Za238B64C10wZzZ5"
+        ></script>
+      </div>
+      <br />
+      <br />
     </div>
 
     <script
@@ -508,7 +660,6 @@
       $("#year").text(new Date().getFullYear());
 
       $("body").scrollspy({ target: "#main-nav" });
-
       //Add smooth scrolling
       $("#main-nav a").on("click", function(e) {
         // Check for a hash value
@@ -522,7 +673,7 @@
             {
               scrollTop: $(hash).offset().top
             },
-            900,
+            400,
             function() {
               //Add hash to URL after scroll
               window.location.hash = hash;

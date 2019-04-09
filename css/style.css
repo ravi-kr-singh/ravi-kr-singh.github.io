@@ -131,6 +131,9 @@ body {
 .techcard-3:hover {
   box-shadow: 0px 0px 56px -8px rgb(249, 191, 63, 0.28);
 }
+.msgmodal:hover {
+  box-shadow: 10px 20px 10px -8px rgb(0, 0, 0, 0.28);
+}
 
 .progressbar-title {
   font-size: 16px;
@@ -450,4 +453,147 @@ body {
   -ms-filter: alpha(opacity=40);
   filter: alpha(opacity=40);
   font-size: 16px;
+}
+
+.demo {
+  background: linear-gradient(to right, #26de81, #38ef7d, #26de81);
+}
+.modal-box {
+  font-family: "Varela Round", sans-serif;
+}
+.modal-box .show-modal {
+      color: #222;
+      background-color: #fff;
+      font-size: 18px;
+      font-weight: 600;
+      text-transform: capitalize;
+      padding: 10px 15px;
+      margin: 80px auto 0;
+      border: none;
+      outline: none;
+      box-shadow: 0 0 10px #555;
+      display: block;
+}
+.modal-box .show-modal:hover,
+.modal-box .show-modal:focus {
+      color: #222;
+      background-color: #fff;
+      border: none;
+      outline: none;
+      text-decoration: none;
+}
+.modal-backdrop.in {
+  opacity: 0.1;
+}
+.modal-box .modal {
+  top: 70px !important;
+}
+.modal-box .modal-dialog {
+      width: 400px;
+      margin: 30px auto 10px;
+}
+.modal-box .modal-dialog .modal-content {
+      border-radius: 25px;
+      box-shadow: 0 0 25px -8px #555;
+}
+.modal-box .modal-dialog .modal-content .close {
+      color: #e74c3c;
+      background-color: #fff;
+      font-size: 28px;
+      text-shadow: none;
+      line-height: 33px;
+      height: 33px;
+      width: 33px;
+      opacity: 1;
+      border-radius: 50%;
+      box-shadow: 0 0 5px #555;
+      position: absolute;
+      left: auto;
+      right: -5px;
+      top: -5px;
+      z-index: 1;
+      transition: all 0.3s;
+}
+.modal-box .modal-dialog .modal-content .close span {
+      margin: -1px 0 0 0;
+      display: block;
+}
+.modal-box .modal-dialog .modal-content .close:hover {
+      color: #fff;
+      background-color: #e74c3c;
+}
+.modal-box .modal-dialog .modal-content .modal-body {
+  padding: 50px 20px !important;
+}
+.modal-box .modal-dialog .modal-content .modal-body .icon {
+      color: #26de81;
+      font-size: 36px;
+      text-align: center;
+      text-shadow: 4px 0 0 #fff, 0 -3px 0 #fff;
+      line-height: 40px;
+      height: 50px;
+      width: 50px;
+      margin: 0 auto 30px;
+      position: relative;
+      z-index: 1;
+}
+.modal-box .modal-dialog .modal-content .modal-body .icon:after {
+      content: "";
+      height: 45px;
+      width: 45px;
+      border: 5px solid #c1c1c1;
+      border-radius: 50%;
+      position: absolute;
+      left: -5px;
+      top: 3px;
+      z-index: -1;
+}
+.modal-box .modal-dialog .modal-content .modal-body .title {
+      margin: 0 0 20px 0;
+      font-size: 20px;
+      color: #222;
+      text-transform: capitalize;
+      font-weight: 600;
+      text-align: center;
+}
+.modal-box .modal-dialog .modal-content .modal-body .description {
+      color: #999;
+      text-align: center;
+      margin: 0 0 15px;
+}
+.modal-box .modal-dialog .modal-content .modal-body .subscribe {
+      color: #fff;
+      background-color: #26de81;
+      font-size: 18px;
+      text-transform: uppercase;
+      padding: 10px 20px;
+      margin: 0 auto;
+      border: 0 solid #222;
+      border-radius: 50px;
+      overflow: hidden;
+      display: block;
+      position: relative;
+      z-index: 1;
+      transition: all 0.3s;
+}
+.modal-box .modal-dialog .modal-content .modal-body .subscribe:hover {
+  background-color: #222;
+}
+@media only screen and (max-width: 768px) {
+      .modal-dialog {
+    width: 400px !important;
+  }
+}
+@media only screen and (max-width: 576px) {
+      .modal-dialog {
+    width: auto !important;
+  }
+}
+
+.change-icon > .fa + .fa,
+.change-icon:hover > .fa {
+  display: none;
+}
+.change-icon:hover > .fa + .fa {
+  display: inherit;
 }
