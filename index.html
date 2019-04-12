@@ -23,6 +23,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/animate.css" />
     <title>Ravi Kr. Singh</title>
     <link rel="icon" type="image/png" href="img/logo.png" />
   </head>
@@ -83,6 +84,7 @@
         }
       }
     </style>
+
     <!--VERTICAL NAVBAR-->
     <div
       id="main-nav"
@@ -119,6 +121,9 @@
 
     <div class="main-body">
       <br />
+      <br />
+      <br />
+
       <div id="about">
         <h2>About Me</h2>
         <hr />
@@ -199,7 +204,6 @@
                 ...yet to learn
               </div>
             </div>
-            <br />
           </div>
         </div>
       </div>
@@ -391,7 +395,7 @@
                       href="https://github.com/ravi-kr-singh/Courstack"
                       ><i
                         class="fa fa-external-link"
-                        style="color:black;"
+                        style="color:#e74c3c;"
                         aria-hidden="true"
                       ></i
                     ></a>
@@ -411,29 +415,34 @@
                   <i class="fa fa-id-card" aria-hidden="true"></i>
                 </div>
                 <div class="timeline-label">
-                  <h2>
-                    <a
-                      href="https://ravi-kr-singh.github.io/"
-                      class="link1 display-6"
-                      >ravi-kr-singh.github.io</a
-                    >
-                    <span class="ml-1">Portfolio website</span>
+                  <h2
+                    class="pr-2 tooltipweb d-inline"
+                    style="width:fit-content;"
+                    data-toggle="tooltip"
+                    data-placement="right"
+                    data-html="true"
+                    title="This is the same website :)"
+                  >
+                    ravi-kr-singh.surge.sh
+                  </h2>
+                  <h2 class="d-inline">
                     <a
                       target="_blank"
                       class="link1 mr-2"
                       style="float:right;"
-                      href="https://ravi-kr-singh.github.io"
+                      href="https://github.com/ravi-kr-singh/new-website"
                       ><i
                         class="fa fa-external-link"
                         aria-hidden="true"
-                        style="color: black;"
+                        style="color: #2c98f0;"
                       ></i>
                     </a>
                   </h2>
+
                   <p>
-                    The company provides technology-backed AI/ML solutions.<br />I
-                    blog on latest technical topics (e.g. Data Science, Cloud
-                    Native, JavaScript Framework etc.).
+                    Portfolio website built using HTML , CSS and some jQuery.
+                    <br />
+                    Bootstrap4 was being used as a framework.
                   </p>
                 </div>
               </div>
@@ -444,32 +453,28 @@
                 <div class="timeline-label">
                   <h2>
                     <a
-                      href="https://ravi-kr-singh.github.io/Courstack/"
+                      href="https://ravi-kr-singh.github.io"
                       target="_blank"
                       class="link1 display-6"
-                      >abcdefghjik.github.io</a
+                      >ravi-kr-singh.github.io</a
                     >
-                    <span>Portfolio Websiite</span>
 
                     <a
                       target="_blank"
                       class="link1 mr-2"
                       style="float:right;"
-                      href="https://github.com/ravi-kr-singh/Courstack"
+                      href="https://github.com/ravi-kr-singh/ravi-kr-singh.github.io"
                       ><i
                         class="fa fa-external-link"
                         aria-hidden="true"
-                        style="color: black;"
+                        style="color: #f9bf3f;"
                       ></i>
                     </a>
                   </h2>
                   <p>
-                    Platform acting as a gateway to developer courses of all
-                    major websites like coursera, udemy ,udacity etc so that one
-                    can compare the courses and select the best one for himself
-                    without bothering to look at each sites individually. <br />
-                    Also providing the user with learning path for web-
-                    development and android.
+                    Sample Portfolio webpage built using only HTML and custom
+                    CSS only. No framework or library was used just custom CSS
+                    and HTML.
                   </p>
                 </div>
               </div>
@@ -574,7 +579,6 @@
               <div class="modal-body">
                 <form>
                   <div class="form-group">
-                    <label for="name">Name</label>
                     <input
                       class="form-control"
                       type="text"
@@ -584,23 +588,24 @@
                     />
                   </div>
                   <div class="form-group">
-                    <label for="email">Email </label>
                     <input
                       class="form-control"
                       type="email"
                       id="email"
                       placeholder="Email"
+                      required
                     />
                     <small class="form-text text-muted"
                       >Your email will not ever be shared</small
                     >
                   </div>
                   <div class="form-group">
-                    <label for="message">Message</label>
                     <textarea
                       class="form-control"
                       id="message"
-                      rows="3"
+                      rows="4"
+                      placeholder="Type your message here..."
+                      required
                     ></textarea>
                   </div>
                 </form>
@@ -681,6 +686,8 @@
           );
         }
       });
+
+      $('[data-toggle="tooltip"]').tooltip();
     </script>
   </body>
 </html>

@@ -93,7 +93,7 @@ body {
 }
 .technologies {
   margin-top: 40px;
-  margin-bottom: 240px;
+  margin-bottom: 150px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -596,4 +596,29 @@ body {
 }
 .change-icon:hover > .fa + .fa {
   display: inherit;
+}
+.tooltipweb {
+  cursor: context-menu;
+}
+
+.tooltip-inner {
+  background-color: #2c98f0;
+  box-shadow: 10px 20px 10px -8px rgb(0, 0, 0, 0.28);
+}
+.tooltip.bs-tooltip-right .arrow:before {
+  border-right-color: #2c98f0 !important;
+}
+.tooltip.bs-tooltip-left .arrow:before {
+  border-left-color: #2c98f0 !important;
+}
+.tooltip.bs-tooltip-bottom .arrow:before {
+  border-bottom-color: #2c98f0 !important;
+}
+.tooltip.bs-tooltip-top .arrow:before {
+  border-top-color: #2c98f0 !important;
+}
+.msgmodal:focus,
+.msgmodal:active,
+.msgmodal:visited {
+  box-shadow: 10px 20px 10px -8px rgb(0, 0, 0, 0.28);
 }
