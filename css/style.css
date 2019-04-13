@@ -6,21 +6,30 @@
   -ms-box-sizing: border-box;
   box-sizing: border-box;
 }
+/*For Testing Purpose*/
+/* * {                                 
+  background: #000 !important;
+  color: #0f0 !important;
+  outline: solid #f00 1px !important;
+}*/
+
 html,
 body {
   width: 100%;
-  height: 100%;
+ 
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
 }
 
 .my-card {
   border-radius: 0%;
   background-color: #d8ee59;
   height: 100%;
-  position: fixed;
   border: 0;
+  position: fixed;
+  top: 0;
+  width: 20%;
+  margin-left: 10%;"
 }
 .my-name {
   font-size: 30px;
@@ -91,6 +100,7 @@ body {
 .link1:hover {
   text-decoration: none;
 }
+
 .technologies {
   margin-top: 40px;
   margin-bottom: 150px;
@@ -131,6 +141,21 @@ body {
 .techcard-3:hover {
   box-shadow: 0px 0px 56px -8px rgb(249, 191, 63, 0.28);
 }
+
+@media only screen and (max-width: 1500px) {
+  .techcard,
+  .techcard-2,
+  .techcard-3 {
+    width: 11rem !important;
+    margin-right: 30px !important;
+    margin-left: 0 !important;
+  }
+  .techcard-3 {
+    margin-right: 0px !important;
+  }
+}
+
+
 .msgmodal:hover {
   box-shadow: 10px 20px 10px -8px rgb(0, 0, 0, 0.28);
 }
@@ -621,4 +646,205 @@ body {
 .msgmodal:active,
 .msgmodal:visited {
   box-shadow: 10px 20px 10px -8px rgb(0, 0, 0, 0.28);
+}
+
+
+@media only screen and (max-width: 1219px) {
+  .technologies {
+    margin-top: 0;
+    margin-bottom:100px;
+   
+  }
+  .techcard,
+  .techcard-2,
+  .techcard-3 {
+    width: 20rem !important;
+    margin-right: auto !important;
+    margin-left: auto !important;
+    margin-top: 40px !important;
+    margin-bottom: 0px !important;
+  }
+  .disapperar {
+    display: none !important;
+  }
+  .techcard-1{
+    margin-top: 0px !important;
+  }
+
+    #main-nav{
+      width: auto;
+      padding: 10px;
+      margin-left:5% ;
+    }
+}
+@media only screen and (max-width: 1110px) {
+  body{
+    overflow-x: hidden;
+  }
+
+  #main-nav{
+    
+    margin-left:0% ;
+  }
+  .main-body{
+    margin-right: 12%;
+  }
+}
+@media only screen and (max-width: 854px) {
+  #main-nav{
+    width: 28%;
+    
+  }.main-body{
+    margin-right: 10%;
+  }
+}
+@media only screen and (max-width: 740px) {
+ 
+
+  #main-nav{
+  
+    height:60px;
+    width: 100%;
+    z-index:1;
+    padding: 0;
+    position: fixed;
+  }
+  .card-body{
+    display: flex;
+    flex-wrap: wrap;
+    width:100%;
+    height:80px;
+  }
+  .my-name,.my-subtitle,.navname,.github-corner{
+    display: none;
+  }
+  .my-image{
+    
+    margin: 0;
+    margin-top:5px;
+    margin-left:10px;
+    height:50px;
+    border:1px;
+  
+  }
+  .navitem,.resume-button{
+    height: 60px;
+    width:17.8%;
+    margin: 0;
+    display: block;
+    padding-top:20px;
+    font-size: 16px;
+    text-align: center;
+    font-weight: bolder;
+  }
+  .main-body{
+    
+    margin-top: 70px;
+    margin-right: 6%;
+    margin-left: 6%;
+  }
+  .resume-button{
+    
+    border-radius: 2px;
+    font-size: 16px;
+    padding: 5px;
+    width:18%;
+    margin-top: 8px;
+    height: 45px;
+  }
+  .navitem:hover{
+    font-size: 16px;
+    letter-spacing: 1px;
+  }
+}
+
+.cv{
+  display: none;
+}
+@media only screen and (max-width: 615px) {
+  .resume{
+    display: none;
+  }
+  .cv{
+    display: inline;
+  }
+}
+@media only screen and (max-width: 599px) {
+  .navitem,.resume-button{
+    height: 60px;
+    width:16.8%;
+    margin: 0;
+    display: block;
+    padding-top:20px;
+    font-size: 15px;
+    text-align: center;
+    font-weight: bolder;
+  }
+  
+  .resume-button{
+    padding: 5px;
+    width:20%;
+    margin-top: 13px;
+    height: 40px;
+  }
+}
+@media only screen and (max-width: 489px){
+  .my-image{
+    display: none;
+  }
+  .navitem,.resume-button{
+    font-size: 14px;
+    width:18.8%;
+    font-weight: bolder;
+  }
+  .resume-button{
+    padding: 5px;
+    width:22%;
+    
+  }
+  .navitem:hover{
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 440px){
+  .resumeicon{
+    display: none;
+  }
+}
+@media only screen and (max-width: 390px){
+ 
+  .item1{
+    width:17%;
+  }
+  .item3{
+    width:22.6%;
+  }
+  .item4{
+    width:21.6%;
+  }
+  .resume{
+    display: none;
+  }
+  .cv{
+    display: inline;
+  }
+  .resumeicon{
+    display: inline;
+  }
+  .resume-button{
+    font-size: bolder;
+    width:20%;
+  }
+  
+}
+@media only screen and (max-width: 327px){
+  .resumeicon{
+    display: none;
+  }
+  .resume-button{
+    width: 16%;
+  }
+  .item3{
+    width: 24.6%;
+  }
 }
