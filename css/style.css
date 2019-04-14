@@ -625,6 +625,10 @@ body {
 }
 .tooltipweb {
   cursor: context-menu;
+  color: black;
+  opacity: 1 !important;
+  font-size: 20px !important;
+  font-weight: 500;
 }
 
 .tooltip-inner {
