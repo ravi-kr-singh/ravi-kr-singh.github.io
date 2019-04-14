@@ -768,6 +768,12 @@ body {
   .timelinecol{
     margin-left: 10px !important;
   }
+  .github-corner{
+    display: block;
+  }
+  .githubsvg{
+    top:60px !important;
+  }
 }
 
 .cv{
