@@ -123,23 +123,29 @@ body {
 .techcard {
   border-radius: 0;
   border: 0;
+  
   box-shadow: 0px 0px 56px -8px rgba(0, 0, 0, 0.17);
   border-bottom: 2px solid #ec5453;
 }
 .techcard-2 {
   border-bottom: 2px solid #2c98f0;
+  
 }
 .techcard-3 {
   border-bottom: 2px solid #f9bf3f;
+  
 }
 
 .techcard:hover {
+  
   box-shadow: 0px 0px 56px -8px rgb(236, 84, 83, 0.28);
 }
 .techcard-2:hover {
+  
   box-shadow: 0px 0px 56px -8px rgb(44, 152, 240, 0.28);
 }
 .techcard-3:hover {
+  
   box-shadow: 0px 0px 56px -8px rgb(249, 191, 63, 0.28);
 }
 
